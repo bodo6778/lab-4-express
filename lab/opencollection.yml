@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: lab
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJzdHVkZW50IiwiaWF0IjoxNzkzODEyOTI1LCJleHAiOjE3OTM4MTY1MjV9.Uu3JpJacsqb91eE8wyk_narXJZatCPyReh4I11Me5ZI
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
+    presets:
+      request:
+        type: http
